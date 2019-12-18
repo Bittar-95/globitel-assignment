@@ -1,0 +1,17 @@
+﻿ <ul class="nav navbar-nav">
+
+    <li><a asp-area="" asp-controller="Employees" asp-action="Index">Home</a></li>
+    <li><a asp-area="" asp-route-id=@Model asp-controller="Users" asp-action="Edit">Account</a></li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MORE
+        </a>
+        <div class="dropdown-menu">
+            <a asp-area=""  asp-controller="Employees" asp-action="ExportExcel">Export Excel File For Active Employees</a>
+            <a asp-area="" asp-controller="Employees" asp-action="ExportStatisticalReport">Expoert Statistical File</a>
+        </div>
+    </li>
+
+    <li><a asp-area="" asp-controller="Employees" asp-action="Logout">Logout</a></li>
+</ul>
